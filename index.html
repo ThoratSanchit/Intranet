@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelPulse Intranet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <div class="logo-placeholder">P</div>
+                    <span class="logo-text">PixelPulse</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#" class="active">Home</a>
+                    <a href="#">Events</a>
+                    <a href="#">Teams</a>
+                    <a href="#">Resources</a>
+                </div>
+                <div class="profile-icon" id="profileIcon">JD</div>
+                <div class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#" class="active">Home</a>
+        <a href="#">Events</a>
+        <a href="#">Teams</a>
+        <a href="#">Resources</a>
+        <div class="profile-link">
+            <div class="profile-icon">JD</div>
+            <span>John Doe</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Welcome to PixelPulse Intranet</h1>
+                    <p>Stay connected, informed, and productive.</p>
+                    <a href="#" class="hero-btn">Explore Resources</a>
+                </div>
+                <div class="hero-illustration">
+                    <span>Company Illustration</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Upcoming Events -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Upcoming Events</h2>
+                <a href="#" class="view-all">View All <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="events-container" id="eventsSlider">
+                <!-- JS can loaded events -->
+            </div>
+        </section>
+
+        <!-- Team Spotlights -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Team Spotlights</h2>
+                <a href="#" class="view-all">View All <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="team-grid" id="teamGrid">
+                <!-- Team members will be loaded by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Useful Resources -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Useful Resources</h2>
+                <a href="#" class="view-all">View All <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="resources-grid" id="resourcesGrid">
+                <!-- Resources will be loaded by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>PixelPulse Inc.</h3>
+                    <p>Innovating technology solutions for a better tomorrow.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Teams</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Company Policies</a></li>
+                        <li><a href="#">Training Materials</a></li>
+                        <li><a href="#">IT Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:hello@pixelpulse.com">hello@pixelpulse.com</a></li>
+                        <li><a href="tel:+18005551234">+1 (800) 555-1234</a></li>
+                        <li>123 Tech Park, San Francisco, CA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 PixelPulse Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
