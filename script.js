@@ -8,25 +8,25 @@ const resourcesGrid = document.getElementById('resourcesGrid');
 // Sample Data
 const events = [
     {
-        date: 'June 15, 2023',
+        date: 'July 29, 2025',
         title: 'Quarterly All-Hands Meeting',
         description: 'Join us for updates on company performance and upcoming initiatives.',
         image: './assets/quarterly.png'
     },
     {
-        date: 'June 22, 2023',
+        date: 'August 2, 2025',
         title: 'Tech Talk: AI Innovations',
         description: 'Exploring the latest advancements in artificial intelligence.',
            image: './assets/image.jpg'
     },
     {
-        date: 'July 5, 2023',
+        date: 'August 9, 2025',
         title: 'Summer Hackathon',
         description: '48 hours to build something amazing with your team!',
         image: './assets/hackthon.png'
     },
     {
-        date: 'July 15, 2023',
+        date: 'August 15, 2025',
         title: 'Wellness Workshop',
         description: 'Mindfulness and stress management techniques for better work-life balance.',
         image: './assets/wellness.png'
@@ -38,31 +38,31 @@ const teamMembers = [
         initials: 'JD',
         name: 'Jane Doe',
         role: 'Lead UI Designer',
-        image: './assets/jane.png'
+        image: './assets/jane.jpg'
     },
     {
         initials: 'JS',
         name: 'John Smith',
         role: 'Senior Developer',
-        image: './assets/john.png'
+        image: './assets/jon.jpg'
     },
     {
         initials: 'AM',
         name: 'Alex Morgan',
         role: 'Product Manager',
-        image: './assets/alex.png'
+        image: './assets/alex.jpg'
     },
     {
         initials: 'SR',
         name: 'Sarah Rivera',
         role: 'UX Researcher',
-        image: './assets/sarah.png'
+        image: './assets/sara.jpg'
     },
     {
         initials: 'MP',
         name: 'Michael Park',
         role: 'DevOps Engineer',
-        image: './assets/michael.png'
+        image: './assets/smith.jpg'
     }
 ];
 
@@ -185,7 +185,7 @@ function initTeamGrid() {
     teamGrid.innerHTML = teamMembers.map(member => `
         <div class="team-card">
             <div class="team-avatar">
-                <span>${member.initials}</span>
+                <img src="${member.image}" alt="${member.name}">
             </div>
             <h3 class="team-name">${member.name}</h3>
             <p class="team-role">${member.role}</p>
@@ -197,6 +197,7 @@ function initTeamGrid() {
         </div>
     `).join('');
 }
+
 
 // Initialize Resources Grid
 function initResourcesGrid() {
